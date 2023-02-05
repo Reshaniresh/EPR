@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Snackbar from '@mui/material/Snackbar';
@@ -82,3 +83,44 @@ const AuthForm = () => {
 };
 
 export default AuthForm;
+=======
+import { useState } from 'react';
+
+import classes from './AuthForm.module.css';
+
+const AuthForm = () => {
+  const [isLogin, setIsLogin] = useState(true);
+
+  const switchAuthModeHandler = () => {
+    setIsLogin((prevState) => !prevState);
+  };
+
+  return (
+    <section className={classes.auth}>
+      <h1>{isLogin ? 'Login' : 'Sign Up'}</h1>
+      <form>
+        <div className={classes.control}>
+          <label htmlFor='email'>Your Email</label>
+          <input type='email' id='email' required />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor='password'>Your Password</label>
+          <input type='password' id='password' required />
+        </div>
+        <div className={classes.actions}>
+          <button>{isLogin ? 'Login' : 'Create Account'}</button>
+          <button
+            type='button'
+            className={classes.toggle}
+            onClick={switchAuthModeHandler}
+          >
+            {isLogin ? 'Create new account' : 'Login with existing account'}
+          </button>
+        </div>
+      </form>
+    </section>
+  );
+};
+
+export default AuthForm;
+>>>>>>> 736c5dd32adfb4741e41eccecc01386114a4fb51
