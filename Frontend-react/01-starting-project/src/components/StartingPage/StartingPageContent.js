@@ -1,10 +1,15 @@
-import classes from './StartingPageContent.module.css';
-
+import classes from "./StartingPageContent.module.css";
+import Footer from "../Layout/Footer";
+import BeauticianListing from "../BeauticianListing/BListing";
 const StartingPageContent = () => {
   return (
-    <section className={classes.starting}>
-      <h1>Welcome on Board!</h1>
-    </section>
+    <>
+      <section className={classes.starting}>
+        <BeauticianListing />
+        
+      </section>
+      <Footer />
+    </>
   );
 };
 
