@@ -5,14 +5,29 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+<<<<<<< HEAD
+    "@mui/icons-material": "^5.11.0",
+    "@mui/joy": "^5.0.0-alpha.62",
+=======
+>>>>>>> 736c5dd32adfb4741e41eccecc01386114a4fb51
     "@mui/material": "^5.11.3",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
+<<<<<<< HEAD
+    "axios": "^1.3.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "react-social-icons": "^5.15.0",
+=======
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
+>>>>>>> 736c5dd32adfb4741e41eccecc01386114a4fb51
     "web-vitals": "^0.2.4"
   },
   "scripts": {
